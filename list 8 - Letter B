@@ -1,0 +1,19 @@
+using System;
+
+namespace Atividade_6_lista_8
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("insira um numero");
+			int num = Convert.ToInt32(Console.ReadLine());
+			
+			for (int i = 0; i <= num; i = i+2){
+				Console.WriteLine(i);
+			}
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
