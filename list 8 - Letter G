@@ -1,0 +1,23 @@
+using System;
+
+namespace Atividade_6_lista_8
+{
+    class Program
+    {
+        public static void Main()
+        {
+        	Console.WriteLine("digite um numero e o codigo te dara a tabuada dele de 5 até 10");
+        	int num = int.Parse(Console.ReadLine());
+        	int mult = 0;
+        	
+        	for(int i = 5; i <= 10; i++)
+        	{
+        		mult = i * num;
+        		Console.WriteLine(mult);
+        	}
+            
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
+}
