@@ -6,13 +6,11 @@ namespace Atividade_6_lista_8
     {
         public static void Main()
         {
-        	Console.WriteLine("digite um numero e o codigo te dara a tabuada dele de 5 até 10");
-        	int num = int.Parse(Console.ReadLine());
         	int mult = 0;
         	
-        	for(int i = 5; i <= 10; i++)
+        	for(int i = 1; i <= 10; i++)
         	{
-        		mult = i * num;
+        		mult = i * 5;
         		Console.WriteLine(mult);
         	}
             
