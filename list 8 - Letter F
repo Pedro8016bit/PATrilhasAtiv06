@@ -1,0 +1,29 @@
+using System;
+
+namespace Atividade_6_lista_8
+{
+    class Program
+    {
+        public static void Main()
+        {
+        	int maior_num = 0;
+        	
+        	for (;true;){
+            Console.WriteLine("digite um numero (digite 0 para parar)");
+            int num_user = int.Parse(Console.ReadLine());
+            
+            if (num_user > maior_num)
+            {
+            	maior_num = num_user;
+            }
+            
+            if (num_user == 0){
+            	break;	
+        	}
+        }
+            Console.WriteLine("o maior numero é " + maior_num);
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+     	   }
+    	}
+	}
