@@ -22,7 +22,7 @@ namespace Atividade_6_lista_8
         	}
         }
             Console.WriteLine("o maior numero é " + maior_num);
-            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.WriteLine("Press any key to continue . . . ");
             Console.ReadKey();
      	   }
     	}
