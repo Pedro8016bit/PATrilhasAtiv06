@@ -1,0 +1,29 @@
+using System;
+
+namespace Exercicios
+{
+    class Program
+    {
+        public static void Main()
+        {
+
+         Console.WriteLine("Insira um número inteiro positivo:");
+         int num = int.Parse(Console.ReadLine());
+         Console.WriteLine("Os divisores de " + num + " são:");
+  
+            for (int i = 1; i <= num; i++)
+            {
+                if (num % i == 0)  
+                {
+                    Console.WriteLine(i);  
+                }
+            }
+
+    
+      
+            Console.WriteLine("");
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
+}
