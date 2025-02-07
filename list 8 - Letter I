@@ -1,0 +1,37 @@
+using System;
+
+namespace Atividade_6_list_8
+{
+    class Program
+    {
+        public static void Main()
+        {
+            Console.WriteLine("Todos os números primos de 0 a 100:");
+
+            for (int i = 2; i <= 100; i++) 
+            {
+                if (EhPrimo(i))
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+            Console.ReadKey();
+        }
+
+        public static bool EhPrimo(int numero)
+        {
+            if (numero < 2)
+                return false;
+
+            for (int j = 2; j * j <= numero; j++) 
+            {
+                if (numero % j == 0)
+                    return false;
+            }
+            
+            return true;
+        }
+    }
+}
