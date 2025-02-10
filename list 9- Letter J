@@ -36,16 +36,28 @@ namespace lista_9___vetores
 					}
 					
 					
+					Console.ReadKey(true);
+					Console.Clear();
 				}
 			}
 			else if (num == 2)
 			{
-				double soma = preço.Sum();
+				double soma = 0;
+				
+				for (int i = 0; i < nome.Length; i++)
+				{
+					double Vtotal = preço[i] * estoque[i];
+					soma += Vtotal;
+				}
 				Console.WriteLine(soma);
+				Console.ReadKey(true);
+				Console.Clear();
 			}
 			
 			else if (num == 3)
 			{
+				Console.WriteLine("Isso é tudo pepeppp-pessoal!!");
+				Console.ReadKey(true);
 				break;
 				}
 			}
