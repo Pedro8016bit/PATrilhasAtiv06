@@ -1,0 +1,26 @@
+using System;
+using System.Linq;
+
+namespace lista_9___vetores
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			string[] nome = new string[10];
+			Console.WriteLine("digite 10 nomes");
+			
+			for(int i=0; i<10; i++)
+			{
+				nome[i] = Convert.ToString(Console.ReadLine());
+			}
+			
+			for (int n = 0; n<10; n++)
+			{
+				Console.WriteLine(nome[n]);
+			}
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
